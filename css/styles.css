@@ -1,0 +1,437 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+/* Start Barra de navegación */
+
+header {
+	box-shadow: 1px 1px 5px gray;
+	width: 100%;
+	position: fixed;
+}
+
+.navBar {
+	height: 64px;
+	display: grid;
+	grid-template-columns: 3% 60% 37%;
+	background-color: #563d7c;
+}
+
+.navBar__BootstrapIcon {
+	height: 36px;
+	width: 36px;
+	border: 1px solid #cbbde2;
+	border-radius: 10px;
+	margin-left: 20px;
+	margin-top: 13px;
+}
+
+.navBar__BootstrapIcon a {
+	color: #fff;
+	font-size: 25px;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.navBar__menu {
+	display: flex;
+	justify-content: flex-start;
+	padding-top: 5px;
+}
+
+.navBar__menu ul li {
+	display: inline-block;
+	color: #cbbde2;
+	margin-right: 13px;
+	cursor: pointer;
+}
+.navBar__menu ul li:hover {
+	color: #fff;
+}
+
+.navBar__menu ul li:first-child {
+	color: #fff;
+	font-weight: bold;
+}
+
+.navBar__icons {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navBar__icons ul li {
+	display: inline-block;
+	list-style: none;
+	margin-left: 20px;
+}
+
+.navBar__icons img {
+	width: 25px;
+}
+
+.navBar__icons ul li a {
+	font-weight: 600;
+	color: #ffe484;
+	margin-right: 1rem;
+	border: 1px solid #ffe484;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	text-decoration: none;
+}
+
+.navBar__icons ul li a:hover {
+	background-color: #ffe484;
+	color: black;
+	transition: all 200ms;
+}
+/* End Barra de navegación */
+
+/* Main */
+#content {
+	padding: 30px;
+}
+
+.container {
+	padding: 0px 25px;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 45% 55%;
+	padding: 25px;
+}
+
+.text-center {
+	margin-top: 60px;
+}
+
+.text-center h1 {
+	font-size: 4rem;
+	color: #7952b3;
+	font-weight: 500;
+	line-height: 20px;
+}
+
+.text-center p {
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+/* Botones */
+
+.text-center-buttons {
+	/* background-color: cyan; */
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.getStartedButton, .downloadButton {
+	display: flex;
+	
+	border: 1px solid #7952b3;
+	border-radius: 0.3rem;
+	margin-right: 10px;
+	text-decoration: none;
+	color: #7952b3;
+	font-size: 1.25rem;
+	justify-content: center;
+	font-weight: 600;
+	line-height: 59px;
+	transition: all 200ms;
+}
+
+.downloadButton {
+	color: #6c757d;
+	border-color: #6c757d;
+}
+
+.text-center .text-center-version {
+	color: #6c757d;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.getStartedButton:hover, .downloadButton:hover {
+	color: white;
+}
+
+.getStartedButton:hover{
+	background-color: #7952b3;
+}
+
+.downloadButton:hover{
+	background-color: #6c757d;
+}
+
+.logoBootstrap {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+/* End botones */
+
+.logoBootstrap img {
+	width: 95%;
+}
+
+
+/* Start Sponsor Slack */
+
+.sponsorSlack {
+	display: flex;
+	width: 316px;
+	height: 112px;
+	padding: 14px;
+	background-color: #f2f2f2;
+}
+
+.sponsorSlack .image img {
+	width: 132px;
+	height: 102px;
+}
+
+.sponsorSlack .description {
+	color: #333;
+	font-size: .8125rem;
+	line-height: 1.4;
+	text-align: left;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+.sponsorSlack .description p {
+	color: #777;
+}
+
+/* Begening generall cardas */
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-bottom: 0;
+}
+
+.card {
+	padding: 3rem;
+	background-color: #f8f9fa;
+	border: 1px solid #fff;
+}
+
+.card hr {
+	width: 6rem;
+	margin: 2.5rem 0;
+	border: 0;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.card h3 {
+	font-size: 1.75rem;
+	margin-bottom: 0;
+}
+
+.card p {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+}
+
+.cards .card .cards-btn {
+	text-decoration: none;
+	font-weight: 400;
+	color: #007bff;
+	padding: 0.37rem 0.75rem;
+	font-size: 1rem;
+	border: 1px solid #007bff;
+	border-radius: 0.25rem;
+	
+}
+
+.cards .card .cards-btn:hover {
+	color: white;
+	background-color: #007bff;
+	transition: all 300ms;
+}
+/* End generall cardas */
+
+/* Begining card Installation */
+
+.card .code {
+	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	padding: 0.5rem 0;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.Installation .code .dollars {
+	color: #009;
+}
+
+.nb {
+	color: #366;
+}
+
+.nt {
+	color: #2f6f9f;
+}
+
+.na {
+	color: #4f9fcf;
+}
+
+.s {
+	color: #d44950;
+}
+/* End card Installation */
+
+/* Begining Bootstrap card */
+
+.Bootstrap .Bootstrap-linkCDN {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.Bootstrap h5 {
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.Bootstrap .code {
+	display: grid;
+	grid-template-rows: 18px;
+	max-width: 250px;
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.jQuery-Scripts {
+	height: 80px;
+}
+
+/* End card Bootstrap */
+
+
+/* Begining card themes */
+
+.Themes .card-themes-image img {
+	width: 100%;
+}
+
+/* End card themes */
+
+/* Begin footer */
+
+footer {
+	margin-top: 0;
+	background-color: #f7f7f7;
+	padding: 30px;
+}
+
+footer ul {
+	list-style: none;
+	display: inline-block;
+}
+
+footer ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+footer a {
+	text-decoration: none;
+	font-weight: 600;
+	color: #495057;
+	font-size: .875rem;
+}
+
+footer a:hover {
+	color: #007bff;
+	text-decoration: underline;
+
+}
+
+footer p {
+	color: #6c757d;
+	font-size: .875rem;
+}
+
+.footer-parrafos {
+	padding-left: 33px;
+}
+
+/* End footer */
+
+
+/* Media Querys */
+
+@media screen and (max-width:1010px) {
+	.navBar__icons ul li a {
+		display: none;
+	}
+
+	.cards .card .cards-btn {
+		display: flex;
+		max-width: 130px;
+	}
+}
+
+@media screen and (max-width:960px) {
+	.Bootstrap .code {
+		max-width: 200px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.row {
+		grid-template-columns: 100%;
+		grid-template-rows: 50% 50%;
+
+		grid-template-areas: "texto"
+							"image";
+	}	
+	
+	.text-center {
+		grid-area: texto;
+	}
+
+	.logoBootstrap {
+		grid-area: image;
+	}
+		
+	.text-center-buttons {
+		display: block;
+	}
+	
+	.text-center-buttons a {
+		margin-bottom: 10px;
+	}
+
+	.cards {
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(3, 1fr);
+	}
+	
+	.Bootstrap .code {
+		max-width: 100%;
+	}
+
+	.navBar {
+		grid-template-columns: 8% 92%;
+	}
+
+	.navBar__icons {
+		display: none;
+	}
+}
